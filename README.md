@@ -31,8 +31,11 @@ for q in range(1000):  # The more range it be the more accurate this test will b
     result.append(test(a))
 avg = sum(result) / len(result)  # average number of equal times in 100 try for 1000 test
 ss = (len(a) / max(a)) * 100  # The percentage which shows a set's part from state space which is 0 to 39 * 39
+
 print("Maximum equal results: {0}\nMinimum equal results: {1}\nAverage: {2}".format(max(result), min(result), avg))
 print("Set a's part from state space: " + str(ss))
 print("Random function accuracy: " + str((100 - (abs(avg - ss) / ss) * 100)))
 
 *****
+
+Add whatever you think will improve the code above
